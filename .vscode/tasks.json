@@ -1,0 +1,52 @@
+//Linux 下将.bat改为.sh 不可断点调试版
+/*{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "g++",
+            "type": "shell",
+            "command": ".\\build.bat",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}*/
+//可进行断点调试
+{
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceRoot}/build"
+    },
+    "tasks": [
+        {
+            "label": "cmake",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-G",
+                "MinGW Makefiles",
+                "-DCMAKE_BUILD_TYPE=Debug",
+                ".."
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "make",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "mingw32-make",
+            "args": [],
+            "dependsOn": [ "cmake" ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

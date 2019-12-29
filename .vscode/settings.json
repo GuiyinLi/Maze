@@ -1,0 +1,50 @@
+{
+    //自定义
+    "git.ignoreLimitWarning": true,
+    "files.defaultLanguage": "c", // ctrl+N新建文件后默认的语言
+    "editor.formatOnType": true, // （对于C/C++）输入分号后自动格式化当前这一行的代码
+    "editor.acceptSuggestionOnEnter": "off", // 我个人的习惯，按回车时一定是真正的换行，只有tab才会接受Intellisense
+    // "editor.snippetSuggestions": "top", // （可选）snippets显示在补全列表顶端，默认是inline
+    "code-runner.runInTerminal": true, // 设置成false会在“输出”中输出，无法输入
+    "code-runner.preserveFocus": true, // 若为false，run code后光标会聚焦到终端上。如果需要频繁输入数据可设为false
+    "code-runner.ignoreSelection": true, // 默认为false，效果是鼠标选中一块代码后可以单独执行，但C是编译型语言，不适合这样用
+    "C_Cpp.clang_format_sortIncludes": true, // 格式化时调整include的顺序（按字母排序）
+    "C_Cpp.suggestSnippets": false, // 同上
+    "git.enabled": true, // 如果你不用git，我建议你关闭它
+    //全局配置
+    "workbench.sideBar.location": "left",
+    "git.autofetch": true,
+    "git.confirmSync": true,
+    "editor.renderWhitespace": "all",
+    "git.enableSmartCommit": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.rendererType": "dom",
+    "window.zoomLevel": -1,
+    "editor.fontSize": 20,
+    "workbench.colorTheme": "Material Theme Darker",
+    "C_Cpp.updateChannel": "Insiders",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "debug.console.fontSize": 18,
+    "terminal.integrated.fontSize": 18,
+    "files.autoGuessEncoding": true,
+    "files.encoding": "gb2312",
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "editor.smoothScrolling": true, // 滚动平滑，不过效果很微弱
+    "files.trimTrailingWhitespace": true, // 保存时，删除每一行末尾的空格
+    "files.insertFinalNewline": true,
+    "files.associations": {
+        "dos.h": "c",
+        "typeinfo": "cpp",
+        "stdlib.h": "c",
+        "queue.h": "c",
+        "windows.h": "c",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "regex": "cpp"
+    }, // 保存后文件最末尾加一整行空行，Linux下的习惯
+}
