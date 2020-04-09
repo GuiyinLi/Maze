@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "E:\\mingw64\\include\\*",
-                "E:\\mingw64\\lib\\gcc\\mingw32\\4.9.2\\include\\*",
+                "E:\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\*",
                 "${workspaceFolder}/include"
             ],
             "defines": [
@@ -12,7 +12,8 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "intelliSenseMode": "msvc-x64"
+            "intelliSenseMode": "msvc-x64",
+            "configurationProvider": "vector-of-bool.cmake-tools"
         }
     ],
     "version": 4
