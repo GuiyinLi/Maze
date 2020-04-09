@@ -1,10 +1,11 @@
 <!--
- * @Author: liguiyin
- * @Date: 2019-11-27 22:36:59
- * @LastEditTime: 2020-04-09 18:07:54
+ * @Author: Ken Kaneki
+ * @Date: 2020-04-09 15:07:49
+ * @LastEditTime: 2020-04-09 18:21:46
  * @Description: README
- * @FilePath: \Maze_V3.0\README.MD
+ * @FilePath: \Maze_V4.0\README.MD
  -->
+
 # 数据结构课设题目
 ## 迷宫问题求解
 
