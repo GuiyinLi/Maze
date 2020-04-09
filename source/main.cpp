@@ -1,7 +1,7 @@
 /*
  * @Author: Ken Kaneki
  * @Date: 2020-04-09 14:53:12
- * @LastEditTime: 2020-04-09 16:13:55
+ * @LastEditTime: 2020-04-09 18:05:39
  * @Description: README
  * @FilePath: \Maze_V3.0\source\main.cpp
  */
@@ -11,7 +11,7 @@
 #include "queue.h"
 #include "stack.h"
 #include "windows.h"
-//暂时不用
+
 void gotoxy(int x, int y) //光标移动到（x,y）
 {
     COORD coord;
