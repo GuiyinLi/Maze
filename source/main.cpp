@@ -1,18 +1,19 @@
 /*
- * @Author: liguiyin
- * @Date: 2019-11-22 10:01:27
- * @LastEditTime : 2019-12-28 22:27:37
+ * @Author: Ken Kaneki
+ * @Date: 2020-04-09 14:53:12
+ * @LastEditTime: 2020-04-09 14:59:57
  * @Description: README
- * @FilePath: \Schtb\source\main.c
+ * @FilePath: \Maze_V3.0\source\main.cpp
  */
+
 #include "Init.h"
-#include "maze.h"
-#include "stack.h"
-#include "queue.h"
 #include "generate.h"
+#include "maze.h"
+#include "queue.h"
+#include "stack.h"
 #include "windows.h"
 //暂时不用
-void gotoxy(int x, int y)      //光标移动到（x,y）
+void gotoxy(int x, int y) //光标移动到（x,y）
 {
     COORD coord;
     coord.X = y;
@@ -23,36 +24,37 @@ int main()
 {
     mazeInfoPtr maze;
     PrintInit();
-    if(!GetInput())
+    if (!GetInput())
     {
         system("pause");
         return 0;
     }
-    do{
+    do
+    {
         getchar();
-        if(!TestMode)
+        if (!TestMode)
         {
             MazeInit(&maze);
             printTip((char *)"求解迷宫图");
             MazePrint(*maze);
             printTip((char *)"深度优先求单条路径");
-            MazePath(maze,maze->route[0]);
-            if(GETRANDMAZE)
-                copyMazeMap(tempMaze,mazeRandMap);
+            MazePath(maze, maze->route[0]);
+            if (GETRANDMAZE)
+                copyMazeMap(tempMaze, mazeRandMap);
             else
-                copyMazeMap(MG,mazeRandMap);
+                copyMazeMap(MG, mazeRandMap);
             printTip((char *)"广度优先求最短路径");
-            ShortestPath(maze,maze->route[1]);
+            ShortestPath(maze, maze->route[1]);
             printTip((char *)"递归法求多条路径");
             MazeAllPath(maze);
             free(maze);
         }
         else
             TimeTest();
-        if(!conOperate())
+        if (!conOperate())
             break;
         PrintInit();
-    }while(GetInput());
+    } while (GetInput());
     system("pause");
     return 0;
 }

@@ -47,24 +47,13 @@ RM = E:\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\VS_Code_program\Maze_V2.0
+CMAKE_SOURCE_DIR = D:\VS_Code_program\C-C++\Maze_V3.0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\VS_Code_program\Maze_V2.0\build
+CMAKE_BINARY_DIR = D:\VS_Code_program\C-C++\Maze_V3.0\build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	E:\CMake\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,11 +66,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	E:\CMake\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\VS_Code_program\Maze_V2.0\build\CMakeFiles D:\VS_Code_program\Maze_V2.0\build\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\VS_Code_program\C-C++\Maze_V3.0\build\CMakeFiles D:\VS_Code_program\C-C++\Maze_V3.0\build\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\VS_Code_program\Maze_V2.0\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\VS_Code_program\C-C++\Maze_V3.0\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Maze_V2.0
+# Target rules for targets named Maze_V3.0
 
 # Build rule for target.
-Maze_V2.0: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Maze_V2.0
-.PHONY : Maze_V2.0
+Maze_V3.0: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Maze_V3.0
+.PHONY : Maze_V3.0
 
 # fast build rule for target.
-Maze_V2.0/fast:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/build
-.PHONY : Maze_V2.0/fast
+Maze_V3.0/fast:
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/build
+.PHONY : Maze_V3.0/fast
 
 source/Init.obj: source/Init.cpp.obj
 
@@ -128,7 +128,7 @@ source/Init.obj: source/Init.cpp.obj
 
 # target to build an object file
 source/Init.cpp.obj:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/Init.cpp.obj
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/Init.cpp.obj
 .PHONY : source/Init.cpp.obj
 
 source/Init.i: source/Init.cpp.i
@@ -137,7 +137,7 @@ source/Init.i: source/Init.cpp.i
 
 # target to preprocess a source file
 source/Init.cpp.i:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/Init.cpp.i
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/Init.cpp.i
 .PHONY : source/Init.cpp.i
 
 source/Init.s: source/Init.cpp.s
@@ -146,7 +146,7 @@ source/Init.s: source/Init.cpp.s
 
 # target to generate assembly for a file
 source/Init.cpp.s:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/Init.cpp.s
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/Init.cpp.s
 .PHONY : source/Init.cpp.s
 
 source/config.obj: source/config.cpp.obj
@@ -155,7 +155,7 @@ source/config.obj: source/config.cpp.obj
 
 # target to build an object file
 source/config.cpp.obj:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/config.cpp.obj
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/config.cpp.obj
 .PHONY : source/config.cpp.obj
 
 source/config.i: source/config.cpp.i
@@ -164,7 +164,7 @@ source/config.i: source/config.cpp.i
 
 # target to preprocess a source file
 source/config.cpp.i:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/config.cpp.i
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/config.cpp.i
 .PHONY : source/config.cpp.i
 
 source/config.s: source/config.cpp.s
@@ -173,7 +173,7 @@ source/config.s: source/config.cpp.s
 
 # target to generate assembly for a file
 source/config.cpp.s:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/config.cpp.s
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/config.cpp.s
 .PHONY : source/config.cpp.s
 
 source/generate.obj: source/generate.cpp.obj
@@ -182,7 +182,7 @@ source/generate.obj: source/generate.cpp.obj
 
 # target to build an object file
 source/generate.cpp.obj:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/generate.cpp.obj
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/generate.cpp.obj
 .PHONY : source/generate.cpp.obj
 
 source/generate.i: source/generate.cpp.i
@@ -191,7 +191,7 @@ source/generate.i: source/generate.cpp.i
 
 # target to preprocess a source file
 source/generate.cpp.i:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/generate.cpp.i
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/generate.cpp.i
 .PHONY : source/generate.cpp.i
 
 source/generate.s: source/generate.cpp.s
@@ -200,7 +200,7 @@ source/generate.s: source/generate.cpp.s
 
 # target to generate assembly for a file
 source/generate.cpp.s:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/generate.cpp.s
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/generate.cpp.s
 .PHONY : source/generate.cpp.s
 
 source/main.obj: source/main.cpp.obj
@@ -209,7 +209,7 @@ source/main.obj: source/main.cpp.obj
 
 # target to build an object file
 source/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/main.cpp.obj
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/main.cpp.obj
 .PHONY : source/main.cpp.obj
 
 source/main.i: source/main.cpp.i
@@ -218,7 +218,7 @@ source/main.i: source/main.cpp.i
 
 # target to preprocess a source file
 source/main.cpp.i:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/main.cpp.i
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/main.cpp.i
 .PHONY : source/main.cpp.i
 
 source/main.s: source/main.cpp.s
@@ -227,7 +227,7 @@ source/main.s: source/main.cpp.s
 
 # target to generate assembly for a file
 source/main.cpp.s:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/main.cpp.s
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/main.cpp.s
 .PHONY : source/main.cpp.s
 
 source/maze.obj: source/maze.cpp.obj
@@ -236,7 +236,7 @@ source/maze.obj: source/maze.cpp.obj
 
 # target to build an object file
 source/maze.cpp.obj:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/maze.cpp.obj
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/maze.cpp.obj
 .PHONY : source/maze.cpp.obj
 
 source/maze.i: source/maze.cpp.i
@@ -245,7 +245,7 @@ source/maze.i: source/maze.cpp.i
 
 # target to preprocess a source file
 source/maze.cpp.i:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/maze.cpp.i
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/maze.cpp.i
 .PHONY : source/maze.cpp.i
 
 source/maze.s: source/maze.cpp.s
@@ -254,7 +254,7 @@ source/maze.s: source/maze.cpp.s
 
 # target to generate assembly for a file
 source/maze.cpp.s:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/maze.cpp.s
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/maze.cpp.s
 .PHONY : source/maze.cpp.s
 
 source/queue.obj: source/queue.cpp.obj
@@ -263,7 +263,7 @@ source/queue.obj: source/queue.cpp.obj
 
 # target to build an object file
 source/queue.cpp.obj:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/queue.cpp.obj
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/queue.cpp.obj
 .PHONY : source/queue.cpp.obj
 
 source/queue.i: source/queue.cpp.i
@@ -272,7 +272,7 @@ source/queue.i: source/queue.cpp.i
 
 # target to preprocess a source file
 source/queue.cpp.i:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/queue.cpp.i
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/queue.cpp.i
 .PHONY : source/queue.cpp.i
 
 source/queue.s: source/queue.cpp.s
@@ -281,7 +281,7 @@ source/queue.s: source/queue.cpp.s
 
 # target to generate assembly for a file
 source/queue.cpp.s:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/queue.cpp.s
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/queue.cpp.s
 .PHONY : source/queue.cpp.s
 
 source/sort.obj: source/sort.cpp.obj
@@ -290,7 +290,7 @@ source/sort.obj: source/sort.cpp.obj
 
 # target to build an object file
 source/sort.cpp.obj:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/sort.cpp.obj
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/sort.cpp.obj
 .PHONY : source/sort.cpp.obj
 
 source/sort.i: source/sort.cpp.i
@@ -299,7 +299,7 @@ source/sort.i: source/sort.cpp.i
 
 # target to preprocess a source file
 source/sort.cpp.i:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/sort.cpp.i
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/sort.cpp.i
 .PHONY : source/sort.cpp.i
 
 source/sort.s: source/sort.cpp.s
@@ -308,7 +308,7 @@ source/sort.s: source/sort.cpp.s
 
 # target to generate assembly for a file
 source/sort.cpp.s:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/sort.cpp.s
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/sort.cpp.s
 .PHONY : source/sort.cpp.s
 
 source/stack.obj: source/stack.cpp.obj
@@ -317,7 +317,7 @@ source/stack.obj: source/stack.cpp.obj
 
 # target to build an object file
 source/stack.cpp.obj:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/stack.cpp.obj
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/stack.cpp.obj
 .PHONY : source/stack.cpp.obj
 
 source/stack.i: source/stack.cpp.i
@@ -326,7 +326,7 @@ source/stack.i: source/stack.cpp.i
 
 # target to preprocess a source file
 source/stack.cpp.i:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/stack.cpp.i
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/stack.cpp.i
 .PHONY : source/stack.cpp.i
 
 source/stack.s: source/stack.cpp.s
@@ -335,7 +335,7 @@ source/stack.s: source/stack.cpp.s
 
 # target to generate assembly for a file
 source/stack.cpp.s:
-	$(MAKE) -f CMakeFiles\Maze_V2.0.dir\build.make CMakeFiles/Maze_V2.0.dir/source/stack.cpp.s
+	$(MAKE) -f CMakeFiles\Maze_V3.0.dir\build.make CMakeFiles/Maze_V3.0.dir/source/stack.cpp.s
 .PHONY : source/stack.cpp.s
 
 # Help Target
@@ -344,9 +344,9 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... Maze_V2.0
+	@echo ... Maze_V3.0
 	@echo ... edit_cache
+	@echo ... rebuild_cache
 	@echo ... source/Init.obj
 	@echo ... source/Init.i
 	@echo ... source/Init.s

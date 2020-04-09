@@ -1,0 +1,42 @@
+[
+{
+  "directory": "D:/VS_Code_program/C-C++/Maze_V3.0/build",
+  "command": "g++   @CMakeFiles/Maze_V3.0.dir/includes_CXX.rsp -g  -finput-charset=UTF-8 -g   -o CMakeFiles\\Maze_V3.0.dir\\source\\Init.cpp.obj -c D:\\VS_Code_program\\C-C++\\Maze_V3.0\\source\\Init.cpp",
+  "file": "D:/VS_Code_program/C-C++/Maze_V3.0/source/Init.cpp"
+},
+{
+  "directory": "D:/VS_Code_program/C-C++/Maze_V3.0/build",
+  "command": "g++   @CMakeFiles/Maze_V3.0.dir/includes_CXX.rsp -g  -finput-charset=UTF-8 -g   -o CMakeFiles\\Maze_V3.0.dir\\source\\config.cpp.obj -c D:\\VS_Code_program\\C-C++\\Maze_V3.0\\source\\config.cpp",
+  "file": "D:/VS_Code_program/C-C++/Maze_V3.0/source/config.cpp"
+},
+{
+  "directory": "D:/VS_Code_program/C-C++/Maze_V3.0/build",
+  "command": "g++   @CMakeFiles/Maze_V3.0.dir/includes_CXX.rsp -g  -finput-charset=UTF-8 -g   -o CMakeFiles\\Maze_V3.0.dir\\source\\generate.cpp.obj -c D:\\VS_Code_program\\C-C++\\Maze_V3.0\\source\\generate.cpp",
+  "file": "D:/VS_Code_program/C-C++/Maze_V3.0/source/generate.cpp"
+},
+{
+  "directory": "D:/VS_Code_program/C-C++/Maze_V3.0/build",
+  "command": "g++   @CMakeFiles/Maze_V3.0.dir/includes_CXX.rsp -g  -finput-charset=UTF-8 -g   -o CMakeFiles\\Maze_V3.0.dir\\source\\main.cpp.obj -c D:\\VS_Code_program\\C-C++\\Maze_V3.0\\source\\main.cpp",
+  "file": "D:/VS_Code_program/C-C++/Maze_V3.0/source/main.cpp"
+},
+{
+  "directory": "D:/VS_Code_program/C-C++/Maze_V3.0/build",
+  "command": "g++   @CMakeFiles/Maze_V3.0.dir/includes_CXX.rsp -g  -finput-charset=UTF-8 -g   -o CMakeFiles\\Maze_V3.0.dir\\source\\maze.cpp.obj -c D:\\VS_Code_program\\C-C++\\Maze_V3.0\\source\\maze.cpp",
+  "file": "D:/VS_Code_program/C-C++/Maze_V3.0/source/maze.cpp"
+},
+{
+  "directory": "D:/VS_Code_program/C-C++/Maze_V3.0/build",
+  "command": "g++   @CMakeFiles/Maze_V3.0.dir/includes_CXX.rsp -g  -finput-charset=UTF-8 -g   -o CMakeFiles\\Maze_V3.0.dir\\source\\queue.cpp.obj -c D:\\VS_Code_program\\C-C++\\Maze_V3.0\\source\\queue.cpp",
+  "file": "D:/VS_Code_program/C-C++/Maze_V3.0/source/queue.cpp"
+},
+{
+  "directory": "D:/VS_Code_program/C-C++/Maze_V3.0/build",
+  "command": "g++   @CMakeFiles/Maze_V3.0.dir/includes_CXX.rsp -g  -finput-charset=UTF-8 -g   -o CMakeFiles\\Maze_V3.0.dir\\source\\sort.cpp.obj -c D:\\VS_Code_program\\C-C++\\Maze_V3.0\\source\\sort.cpp",
+  "file": "D:/VS_Code_program/C-C++/Maze_V3.0/source/sort.cpp"
+},
+{
+  "directory": "D:/VS_Code_program/C-C++/Maze_V3.0/build",
+  "command": "g++   @CMakeFiles/Maze_V3.0.dir/includes_CXX.rsp -g  -finput-charset=UTF-8 -g   -o CMakeFiles\\Maze_V3.0.dir\\source\\stack.cpp.obj -c D:\\VS_Code_program\\C-C++\\Maze_V3.0\\source\\stack.cpp",
+  "file": "D:/VS_Code_program/C-C++/Maze_V3.0/source/stack.cpp"
+}
+]

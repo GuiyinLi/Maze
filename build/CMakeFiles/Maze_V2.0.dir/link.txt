@@ -1,3 +1,0 @@
-E:\CMake\bin\cmake.exe -E remove -f CMakeFiles\Maze_V2.0.dir/objects.a
-E:\mingw64\bin\ar.exe cr CMakeFiles\Maze_V2.0.dir/objects.a @CMakeFiles\Maze_V2.0.dir\objects1.rsp
-g++ -g  -finput-charset=UTF-8 -g   -Wl,--whole-archive CMakeFiles\Maze_V2.0.dir/objects.a -Wl,--no-whole-archive  -o ..\bin\Maze_V2.0.exe -Wl,--out-implib,..\bin\libMaze_V2.0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Maze_V2.0.dir\linklibs.rsp
