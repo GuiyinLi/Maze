@@ -1,11 +1,10 @@
 /*
  * @Author: Ken Kaneki
  * @Date: 2020-04-09 14:53:12
- * @LastEditTime: 2020-04-09 14:59:57
+ * @LastEditTime: 2020-04-09 16:13:55
  * @Description: README
  * @FilePath: \Maze_V3.0\source\main.cpp
  */
-
 #include "Init.h"
 #include "generate.h"
 #include "maze.h"
